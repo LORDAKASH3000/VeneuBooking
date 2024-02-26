@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#body_div {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+#profile_card {
+    width: 24%;
+    margin: 0 8%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+#img_card {
+    background-image: linear-gradient(to bottom right, #84d8e5, #168293);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    color: white;
+}
+
+#img_card img{
+    width: 46%;
+    aspect-ratio: 9 / 9;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-top: -120px;
+}
+
+#U_name {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+}
+
+.dis_input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+#edit_btn {
+    font-size: x-large;
+    cursor: pointer;
+}
+
+#info_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#cont_heading {
+    border-bottom: 1px solid rgb(192 192 192);
+    width: 90%;
+    padding: 10px 0 10px 10px;
+}
+
+#info_container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#btn_sec { 
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#save_btn {
+    padding: 5px 28px;
+    border-radius: 10px;
+    margin: 15px auto 10px auto;
+    width: 40%;
+    display: none;
+}
+
+#cancle_btn {
+    padding: 5px 28px;
+    border-radius: 10px;
+    margin: 15px auto 10px auto;
+    width: 40%;
+    display: none;
+}
+
+#pass {
+    margin: 0 auto 20px auto;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#pass button{
+    padding: 5px 28px;
+    border-radius: 10px;
+}
+
+#booked_list{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    height: 62%;
+}
+
+#booked_list > h2{
+    border-bottom: 1px solid rgb(134, 134, 134);
+    margin: 30px auto;
+    width: 92%;
+    padding-left: 20px;
+    padding-bottom: 15px;
+}
+
+#booked_list > table{
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 35px;
+}
+
+#heading_row_id {
+    font-size: 19px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(192 192 192);
+    padding-bottom: 10px;
+}
+
+#booked_list > table > tbody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading_row {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(192 192 192);
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: rgb(0 158 255);
+}

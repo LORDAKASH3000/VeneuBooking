@@ -1,0 +1,8 @@
+.nav-link:hover{
+    cursor: pointer;
+}
+h3{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+  }

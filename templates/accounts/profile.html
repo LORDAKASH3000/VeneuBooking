@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+    <title>Profile</title>
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="body_div">
+        <form id="profile_card" method="POST">
+            {% csrf_token %}
+            <div id="img_card">
+                    <img src="{% static 'img/profile_pic.jpg' %}" alt="">
+                    <input class="dis_input" type="text" id="U_name" name="username" value="{{request.user}}" disabled>
+                    <p id="edit_btn">Edit Profile</p>
+            </div>
+            <div id="info_sec">
+                <h4 id="cont_heading">Personal Information</h4>
+                <span id="info_container">
+                    <span id="contact">
+                        <h5>Contact no.</h5>
+                        <input class="dis_input" type="text" name="contact" value="{{request.user.contactnumber}}" disabled>
+                    </span>
+                    <span id="email">
+                        <h5>Email</h5>
+                        <input class="dis_input" type="text" name="email" value="{{request.user.email}}" disabled>
+                    </span>
+                </span>
+                <span id="btn_sec">
+                    <button id="save_btn" type="submit">Save</button>
+                    <button id="cancle_btn" type="button">Cancle</button>
+                </span>
+            </div>
+            <span id="pass">
+                <h5>Change Password</h5>
+                <button type="button">Change</button>
+            </span>
+        </form>
+        <div id="booked_list">
+            <h2>Your Bookings</h2>
+            <table>
+                <tbody>
+                    <tr id="heading_row_id">
+                        <th>Location</th>
+                        <th>Booking Date</th>
+                        <th>From Date</th>
+                        <th>To Date</th>
+                        <th>Amount</th>
+                    </tr>
+                    {% if bookings %}
+                        {% for booking in bookings %}
+                            <tr class="heading_row">
+                                <th>{{booking.venue.name}}</th>
+                                <th>{{booking.booking_date}}</th>
+                                <th>{{booking.booked_date_from}}</th>
+                                <th>{{booking.booked_date_to}}</th>
+                                <th>{{booking.token_money}}</th>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
+
+{% block script %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/edit_profile.js' %}"></script>
+{% endblock %}

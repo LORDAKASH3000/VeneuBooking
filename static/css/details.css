@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#body_div {
+    margin: 0;
+}
+
+.carousel-item > img {
+    aspect-ratio: 21 / 7;
+}
+
+#main_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0;
+}
+
+#desc {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#img_block {
+    width: 70%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    border-radius: 20px;
+}
+
+#img_block > img{
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+#img_block > h1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+#img_block > h3{
+    text-align: center;
+    font-size: 18px;
+}
+
+#desc section:first-of-type {
+    margin: 0 0 15px 0px;
+}
+
+#desc section:first-of-type > h2{
+    margin-left: -30px;
+    margin-bottom: 15px;
+}
+
+#desc section:first-of-type > h3 {
+    margin-left: -30px;
+    margin-bottom: 15px;
+}
+
+#check{
+    border: 1px solid rgba(206, 206, 206, 0.667);
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+    margin-right: 60px;
+}
+
+#check > h1{
+    border-bottom: 1px solid rgba(206, 206, 206, 0.667);
+}
+
+#check > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+#check > form > span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+#check > form > button {
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: #ffb3b3;
+    color: white;
+}
+
+#C_A_btn {
+    border-radius: 8px;
+    padding: 8px 15px;
+    background-color: rgb(74, 157, 253);
+    color: white;
+}
+
+.carousel-item > img {
+    aspect-ratio: 26 / 7;
+}

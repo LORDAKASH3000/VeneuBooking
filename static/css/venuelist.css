@@ -1,0 +1,15 @@
+#body_div{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 25px;
+}
+
+#card_img {
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (min-width: 1920px) {
+    #body_div{
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
