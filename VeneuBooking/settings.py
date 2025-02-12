@@ -85,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'venuebooking',
-        'USER': 'CHAKRA',
+        'USER': 'Chakra',
         'PASSWORD': 'cckra',
         'HOST': 'localhost',
         'PORT': '3306'
